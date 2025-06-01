@@ -1573,3 +1573,119 @@ section {
     text-align: center; /* Center titles */
     width: 100%;
 }
+
+/* General Responsive Adjustments */
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 1.5rem;
+    }
+    
+    h1 {
+        font-size: var(--font-size-4xl);
+    }
+    
+    h2 {
+        font-size: var(--font-size-3xl);
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 15px; /* Slightly smaller base font size */
+    }
+    
+    section {
+        padding: 6rem 1.5rem; /* Reduced padding */
+    }
+    
+    h1 {
+        font-size: var(--font-size-3xl);
+    }
+    
+    h2 {
+        font-size: var(--font-size-2xl);
+    }
+    
+    .section-title-immersive {
+        font-size: 2.5rem; /* Adjusted size for immersive titles */
+        margin-bottom: 2rem; /* Adjusted margin */
+    }
+
+    /* Adjust spacing and alignment for flex/grid items */
+    .hero-highlights,
+    .hero-stats {
+        flex-direction: column; /* Stack items */
+        align-items: center; /* Center items */
+        gap: 1.5rem; /* Adjusted gap */
+    }
+
+    .stat-item:not(:last-child)::after {
+        display: none; /* Remove separators on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 14px; /* Further reduced base font size */
+    }
+    
+    section {
+        padding: 4rem 1rem; /* Further reduced padding */
+    }
+    
+    h1 {
+        font-size: var(--font-size-2xl);
+    }
+    
+    h2 {
+        font-size: var(--font-size-xl);
+    }
+    
+     .section-title-immersive {
+        font-size: 2rem; /* Adjusted size for immersive titles */
+        margin-bottom: 1.5rem; /* Adjusted margin */
+    }
+}
+
+/* Main Content Padding to clear fixed header */
+.main-content {
+    padding-top: 60px; /* Adjusted padding to move content up */
+}
+
+/* General Immersive Section Styling (Ensure consistency) */
+.immersive-section {
+    position: relative;
+    overflow: hidden;
+    color: var(--color-light);
+    padding: 8rem 2rem; /* Increased padding */
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Center content horizontally */
+}
+
+.immersive-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--color-dark-alt); /* Example background */
+    z-index: 0;
+}
+
+.particles-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.section-title-immersive {
+    font-size: 3rem; /* Adjusted size */
+    margin-bottom: 3rem; /* Adjusted margin */
+    color: var(--color-light);
+    text-align: center; /* Center titles */
+    width: 100%;
+}
