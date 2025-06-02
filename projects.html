@@ -50,6 +50,8 @@
     <main class="main-content hidden">
         <!-- Projects Section -->
         <section id="projects" class="section-immersive">
+            <div class="immersive-background"></div>
+            <div class="particles-container"></div>
             <div class="container-immersive">
                 <div class="section-header-immersive">
                     <h2 class="section-title-immersive">My Projects</h2>
@@ -80,7 +82,7 @@
                         </div>
                         <div class="project-info">
                             <h3 class="project-title">Law Firm Website</h3>
-                            <p class="project-description">A fully responsive e-commerce platform with cart functionality and payment integration.</p>
+                            <p class="project-description">Website for Legal Firm named Legal Heart</p>
                             <div class="project-tech">
                                 <span class="tech-tag">React</span>
                                 <span class="tech-tag">Node.js</span>
@@ -105,7 +107,7 @@
                         </div>
                         <div class="project-info">
                             <h3 class="project-title">IT Company</h3>
-                            <p class="project-description">Mobile application for tracking workouts, nutrition, and fitness goals.</p>
+                            <p class="project-description">Website for iFiCode Inclusive, my tech started</p>
                             <div class="project-tech">
                                 <span class="tech-tag">React Native</span>
                                 <span class="tech-tag">Firebase</span>
@@ -130,7 +132,7 @@
                         </div>
                         <div class="project-info">
                             <h3 class="project-title">Freelancing</h3>
-                            <p class="project-description">Modern dashboard interface with data visualization and user management.</p>
+                            <p class="project-description">ON PROGRESS- Website for iFiHustle</p>
                             <div class="project-tech">
                                 <span class="tech-tag">Figma</span>
                                 <span class="tech-tag">HTML/CSS</span>
@@ -141,7 +143,7 @@
                     
                     <div class="project-card" data-category="web">
                         <div class="project-image">
-                            <img src="images/ifigym.png" alt="Gym Website">
+                            <img src="images/ifigym.png" alt="Portfolio Website">
                             <div class="project-overlay">
                                 <div class="project-links">
                                     <a href="#" class="project-link">
@@ -154,8 +156,8 @@
                             </div>
                         </div>
                         <div class="project-info">
-                            <h3 class="project-title">Fitness Center</h3>
-                            <p class="project-description">Website for GYM and Fitness Center at iFiCode</p>
+                            <h3 class="project-title">GYM/Fitness Center</h3>
+                            <p class="project-description">Website for GYM/Fitness Club. A sample project created to sell under iFiCode Inclusive</p>
                             <div class="project-tech">
                                 <span class="tech-tag">HTML/CSS</span>
                                 <span class="tech-tag">JavaScript</span>
@@ -166,7 +168,7 @@
                     
                     <div class="project-card" data-category="ui">
                         <div class="project-image">
-                            <img src="images/iFiCodeFood.png" alt="Travel App UI">
+                            <img src="images/ififood.png" alt="Travel App UI">
                             <div class="project-overlay">
                                 <div class="project-links">
                                     <a href="#" class="project-link">
@@ -180,7 +182,7 @@
                         </div>
                         <div class="project-info">
                             <h3 class="project-title">Food</h3>
-                            <p class="project-description">Website for resturant</p>
+                            <p class="project-description">Website for Resturant, Cafe, Pizza Parlour, and Hotels</p>
                             <div class="project-tech">
                                 <span class="tech-tag">Figma</span>
                                 <span class="tech-tag">Adobe XD</span>
@@ -191,7 +193,7 @@
                     
                     <div class="project-card" data-category="mobile">
                         <div class="project-image">
-                            <img src="images/CoachingCenterWeb.png" alt="Coaching Center Website">
+                            <img src="images/CoachingCenterWeb.png" alt="Weather App">
                             <div class="project-overlay">
                                 <div class="project-links">
                                     <a href="#" class="project-link">
@@ -204,11 +206,12 @@
                             </div>
                         </div>
                         <div class="project-info">
-                            <h3 class="project-title">Coaching Center</h3>
-                            <p class="project-description">Website for Coaching Center. One can grab it from iFiCode</p>
+                            <h3 class="project-title">Website for Coaching Center</h3>
+                            <p class="project-description">Website for Coaching Center. A sample project created to sell under iFiCode Inclusives.</p>
                             <div class="project-tech">
                                 <span class="tech-tag">React Native</span>
-
+                                <span class="tech-tag">Weather API</span>
+                                <span class="tech-tag">Geolocation</span>
                             </div>
                         </div>
                     </div>
@@ -256,5 +259,23 @@
     <script src="js/cursor.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/immersive-sections.js"></script>
+    <script>
+        // Initialize Vanta.js effect for the projects page
+        VANTA.NET({
+            el: ".particles-container",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x3b82f6,
+            backgroundColor: 0x0a0a0a,
+            points: 10.00,
+            maxDistance: 25.00,
+            spacing: 20.00
+        });
+    </script>
 </body>
 </html>

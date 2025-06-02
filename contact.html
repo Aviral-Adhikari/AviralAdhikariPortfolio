@@ -52,98 +52,120 @@
         <section class="immersive-section contact-immersive" id="contact">
             <div class="immersive-background"></div>
             <div class="light-sweep"></div>
+            <div class="particles-container"></div>
             
-            <h2 class="section-title-immersive">Let's Connect</h2>
+            <div class="contact-header">
+                <h2 class="section-title-immersive">Let's Connect</h2>
+                <p class="contact-subtitle">Have a project in mind? Let's discuss how we can work together.</p>
+            </div>
             
             <div class="immersive-container">
-                <div class="contact-form-container">
-                    <form class="contact-form-immersive" id="contactForm" action="https://formspree.io/f/xeokjbjg" method="POST">
-                        <div class="form-group-immersive">
-                            <div class="form-icon">
-                                <i class="fas fa-user"></i>
-                            </div>
-                            <div class="form-input-container">
-                                <input type="text" id="name" name="name" required>
-                                <label for="name">Your Name</label>
-                            </div>
+                <div class="contact-grid">
+                    <!-- Contact Form Section -->
+                    <div class="contact-form-wrapper">
+                        <div class="form-header">
+                            <h3>Send me a message</h3>
+                            <p>I'll get back to you as soon as possible</p>
                         </div>
-                        
-                        <div class="form-group-immersive">
-                            <div class="form-icon">
-                                <i class="fas fa-envelope"></i>
+                        <form class="contact-form-immersive" id="contactForm" action="https://formspree.io/f/xeokjbjg" method="POST">
+                            <div class="form-group-immersive">
+                                <div class="form-input-container">
+                                    <input type="text" id="name" name="name" required>
+                                    <label for="name">Your Name</label>
+                                    <div class="input-icon">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="form-input-container">
-                                <input type="email" id="email" name="email" required>
-                                <label for="email">Your Email</label>
+                            
+                            <div class="form-group-immersive">
+                                <div class="form-input-container">
+                                    <input type="email" id="email" name="email" required>
+                                    <label for="email">Your Email</label>
+                                    <div class="input-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        
-                        <div class="form-group-immersive">
-                            <div class="form-icon">
-                                <i class="fas fa-comment"></i>
+                            
+                            <div class="form-group-immersive">
+                                <div class="form-input-container">
+                                    <textarea id="message" name="message" required></textarea>
+                                    <label for="message">Your Message</label>
+                                    <div class="input-icon">
+                                        <i class="fas fa-comment"></i>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="form-input-container">
-                                <textarea id="message" name="message" required></textarea>
-                                <label for="message">Your Message</label>
+                            
+                            <button type="submit" class="send-button">
+                                <span class="button-text">Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                            
+                            <div class="form-success hidden">
+                                <i class="fas fa-check-circle"></i>
+                                <p>Message sent successfully!</p>
                             </div>
-                        </div>
-                        
-                        <button type="submit" class="send-button">
-                            <span class="button-text">Send Message</span>
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
-                        
-                        <div class="form-success hidden">
-                            <i class="fas fa-check-circle"></i>
-                            <p>Message sent successfully!</p>
-                        </div>
-                    </form>
-                </div>
-                
-                <div class="contact-info-immersive">
-                    <div class="contact-card">
-                        <div class="card-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="card-content">
-                            <h3>Email</h3>
-                            <p>avi12aviralyt@ificode.com</p>
-                        </div>
+                        </form>
                     </div>
-                    
-                    <div class="contact-card">
-                        <div class="card-icon">
-                            <i class="fas fa-phone"></i>
+
+                    <!-- Contact Info Section -->
+                    <div class="contact-info-wrapper">
+                        <div class="contact-info-header">
+                            <h3>Get in touch</h3>
+                            <p>Choose your preferred way to reach out</p>
                         </div>
-                        <div class="card-content">
-                            <h3>Phone</h3>
-                            <p>+977 9844550537</p>
+                        
+                        <div class="contact-cards">
+                            <div class="contact-card">
+                                <div class="card-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h4>Email</h4>
+                                    <a href="mailto:avi12aviralyt@ificode.com">avi12aviralyt@ificode.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-card">
+                                <div class="card-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h4>Phone</h4>
+                                    <a href="tel:+9779844550537">+977 9844550537</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-card">
+                                <div class="card-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h4>Location</h4>
+                                    <p>Kathmandu, Nepal</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="contact-card">
-                        <div class="card-icon">
-                            <i class="fas fa-map-marker-alt"></i>
+
+                        <div class="social-connect">
+                            <h4>Connect with me</h4>
+                            <div class="social-icons-immersive">
+                                <a href="https://www.linkedin.com/in/aviraladhikari/" target="_blank" class="social-icon-immersive" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://github.com/Aviral-Adhikari" target="_blank" class="social-icon-immersive" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://www.instagram.com/avi_aviral__/" target="_blank" class="social-icon-immersive" aria-label="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://twitter.com" target="_blank" class="social-icon-immersive" aria-label="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
                         </div>
-                        <div class="card-content">
-                            <h3>Location</h3>
-                            <p>Kathmandu, Nepal</p>
-                        </div>
-                    </div>
-                    
-                    <div class="social-icons-immersive">
-                        <a href="https://www.linkedin.com/in/aviraladhikari/" target="_blank" class="social-icon-immersive">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://github.com/Aviral-Adhikari" target="_blank" class="social-icon-immersive">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.instagram.com/avi_aviral__/" target="_blank" class="social-icon-immersive">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://twitter.com" target="_blank" class="social-icon-immersive">
-                            <i class="fab fa-twitter"></i>
-                        </a>
                     </div>
                 </div>
             </div>

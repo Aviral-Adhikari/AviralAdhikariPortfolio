@@ -970,14 +970,20 @@
     }
 }
 
+/* Specific style for the blog post container */
+.main-content .blog-post {
+    background-color: grey; /* Temporarily solid gray background for testing */
+    border-radius: var(--border-radius-lg);
+    padding: 2rem; /* Ensure padding is still applied */
+    position: relative;
+    z-index: 1;
+}
+
 /* Blog Post Styles */
 .blog-post {
     max-width: 800px;
     margin: 0 auto;
-    padding: 2rem;
     color: var(--color-light);
-    position: relative;
-    z-index: 1;
 }
 
 /* Immersive Background */
