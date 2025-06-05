@@ -3,19 +3,11 @@ class TypeWriter {
         this.element = element;
         this.text = options.text || '';
         this.delay = options.delay || 100;
-        this.cursor = options.cursor || false;
-        this.cursorChar = options.cursorChar || '|';
         this.currentChar = 0;
     }
     
     start() {
-        if (this.cursor) {
-            this.element.innerHTML = '<span class="typewriter-text"></span><span class="typewriter-cursor">' + this.cursorChar + '</span>';
-            this.textElement = this.element.querySelector('.typewriter-text');
-        } else {
-            this.textElement = this.element;
-        }
-        
+        this.textElement = this.element;
         this.type();
     }
     

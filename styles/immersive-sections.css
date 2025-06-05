@@ -131,25 +131,8 @@
 
 .typing {
     position: relative;
-    color: var(--color-primary);
+    color: var(--color-light);
     display: inline-block;
-}
-
-.typing::after {
-    content: '';
-    position: absolute;
-    right: -8px;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 70%;
-    width: 3px;
-    background-color: var(--color-primary);
-    animation: blink 1s step-end infinite;
-}
-
-@keyframes blink {
-    from, to { opacity: 1; }
-    50% { opacity: 0; }
 }
 
 .hero-subtitle-immersive {
